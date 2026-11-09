@@ -1,13 +1,14 @@
 name: Check for Merge Conflicts
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-  # Also run when the base branch is updated
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+#   # Also run when the base branch is updated
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   check-merge-conflict:
     runs-on: ubuntu-latest

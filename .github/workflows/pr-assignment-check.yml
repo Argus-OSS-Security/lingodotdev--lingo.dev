@@ -1,15 +1,16 @@
 name: PR Assignment Check
 
-on:
-  pull_request_target:
-    types: [opened, reopened, edited]
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR number to check"
-        required: true
-        type: number
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [opened, reopened, edited]
+#   workflow_dispatch:
+#     inputs:
+#       pr_number:
+#         description: "PR number to check"
+#         required: true
+#         type: number
+# 
 jobs:
   check:
     runs-on: ubuntu-latest

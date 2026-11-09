@@ -1,13 +1,14 @@
 name: Build Docker Image
 
-on:
-  workflow_dispatch:
-  push:
-    paths:
-      - Dockerfile
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     paths:
+#       - Dockerfile
+#     branches:
+#       - main
+# 
 permissions:
   contents: read
 
